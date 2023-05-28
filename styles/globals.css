@@ -8,9 +8,6 @@ html {
   font-family: "Sawarabi Gothic", sans-serif;
 }
 
-button.follow {
-}
-
 ul.sidebar__routes a li {
   @apply h-[40px] flex items-center gap-2 px-4 hover:bg-gray-200/30  transition-all w-fit rounded-[20px];
 }
