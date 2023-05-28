@@ -17,3 +17,26 @@ export const sidebarRoutes = [
         name: "Settings", path: "/settings", icon: HiOutlineCog6Tooth
     },
 ]
+
+export const usersToFollow = [
+    {
+        name: "john doe",
+        username: "johndoe",
+        profilePic: "/Images/user1.jpg"
+    },
+    {
+        name: "john muller",
+        username: "johnmuller",
+        profilePic: "/Images/user2.jpg"
+    },
+    {
+        name: "john doe",
+        username: "johndoe",
+        profilePic: "/Images/user1.jpg"
+    },
+    {
+        name: "john muller",
+        username: "johnmuller",
+        profilePic: "/Images/user2.jpg"
+    }
+]

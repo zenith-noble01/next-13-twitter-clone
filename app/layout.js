@@ -1,4 +1,4 @@
-import { Header, Sidebar } from "@components"
+import { Sidebar } from "@components"
 import "@styles/globals.css"
 
 
@@ -11,9 +11,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <main className="flex w-full bg-black text-white px-24">
+        <main className="flex w-full px-24">
           <Sidebar />
-          <div className="main__container  w-3/4">
+          <div className="main__container w-3/4">
             {children}
           </div>
         </main>
