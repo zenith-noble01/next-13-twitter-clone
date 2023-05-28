@@ -1,3 +1,4 @@
+import { Header, Sidebar } from "@components"
 import "@styles/globals.css"
 
 
@@ -9,7 +10,14 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>{children}</body>
-    </html>
+      <body>
+        <main className="flex w-full bg-black text-white px-24">
+          <Sidebar />
+          <div className="main__container  w-3/4">
+            {children}
+          </div>
+        </main>
+      </body>
+    </html >
   )
 }
