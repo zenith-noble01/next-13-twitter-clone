@@ -4,7 +4,7 @@ import Image from "next/image";
 const HomeSidebar = () => {
   return (
     <div className="w-2/5 pl-8 py-4">
-      <div className="flex flex-col h-fit w-full  bg-gray-200/30 rounded-2xl">
+      <div className="flex flex-col h-fit w-full  bg-gray-200/30 rounded-2xl sticky top-4">
         <h1 className=" text-2xl p-2">Who to follow</h1>
 
         <div className="flex flex-col w-full ">
@@ -27,7 +27,7 @@ const HomeSidebar = () => {
                 </p>
               </div>
 
-              <button className="h-[40px] px-[20px] rounded-[20px] capitalize border-blue-500 border text-blue-500 hover:bg-blue-500 hover:text-white transition-all">
+              <button className="h-[40px] px-[20px] rounded-[20px] capitalize border-[#1EA1F2] border text-[#1EA1F2] hover:bg-[#1EA1F2] hover:text-white transition-all">
                 follow
               </button>
             </div>
