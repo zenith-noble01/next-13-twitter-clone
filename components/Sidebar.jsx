@@ -6,7 +6,7 @@ import { sidebarRoutes } from "@constants";
 
 const Sidebar = () => {
   return (
-    <div className="w-3/12  min-h-screen py-4 ">
+    <div className="w-[20%]  min-h-screen py-4 ">
       <div className="flex flex-col gap-8 sticky top-4">
         <div className="icon h-[50px] transition-all w-[50px] rounded-full flex items-center justify-center  hover:bg-[#1EA1F2] cursor-pointer">
           <FaTwitter className="text-3xl text-[#1EA1F2]" />

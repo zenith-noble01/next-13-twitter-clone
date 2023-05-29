@@ -19,11 +19,13 @@ const HomeSidebar = () => {
                   height={50}
                   width={50}
                   alt="users to follow in the app"
-                  className="w-[50px] h-[50px] rounded-full object-cover object-top"
+                  className="w-[40px] h-[40px] min-w[40px] rounded-full object-cover object-top"
                 />
                 <p className="flex flex-col">
                   {user.name}
-                  <span className="text-gray-400">@{user.username}</span>
+                  <span className="text-gray-400 text-xs">
+                    @{user.username}
+                  </span>
                 </p>
               </div>
 

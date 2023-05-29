@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import React, { useState } from "react";
+import { RiCloseLine } from "react-icons/ri";
 
 const Share = () => {
   const [file, setFile] = useState(null);
@@ -23,10 +24,21 @@ const Share = () => {
             className="border-none outline-none placeholder:text-gray-500 bg-transparent resize-none w-full"
           />
         </div>
-        <div className="share_bottom">
+        <div className="share_bottom flex flex-col gap-2">
           {file && (
-            <div className="image__container">
-              <Image src={URL.createObjectURL(file)} height={20} width={20} />
+            <div className="image__container flex wfull bg-red relative">
+              <Image
+                src={URL.createObjectURL(file)}
+                height={20}
+                width={20}
+                className="w-full max-h-[300px] object-cover rounded-3xl object-top"
+              />
+              <div
+                className="absolute right-0 text-2xl cursor-pointer h-[30px] w-[30px] rounded-full bg-white flex items-center justify-center"
+                onClick={() => setFile(null)}
+              >
+                <RiCloseLine className="text-rose-500" />
+              </div>
             </div>
           )}
           <div className="action__container flex justify-between items-center">
@@ -38,6 +50,7 @@ const Share = () => {
                 style={{
                   display: "none",
                 }}
+                onChange={(e) => setFile(e.target.files[0])}
               />
               <span>icon</span>
             </label>
