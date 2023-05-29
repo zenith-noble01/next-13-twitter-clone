@@ -1,7 +1,10 @@
+"use client";
+
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 
 const Share = () => {
+  const [file, setFile] = useState(null);
   return (
     <div className="px-8 py-4 bg-white flex gap-4">
       <div className="user__profile  ">
@@ -20,11 +23,28 @@ const Share = () => {
             className="border-none outline-none placeholder:text-gray-500 bg-transparent resize-none w-full"
           />
         </div>
-        <div className="share_bottom flex justify-between items-center">
-          <p>icon</p>
-          <button className="h-[40px] rounded-[20px] cursor-pointer bg-[#1EA1F2] px-4 text-white">
-            Tweet
-          </button>
+        <div className="share_bottom">
+          {file && (
+            <div className="image__container">
+              <Image src={URL.createObjectURL(file)} height={20} width={20} />
+            </div>
+          )}
+          <div className="action__container flex justify-between items-center">
+            <label htmlFor="file">
+              <input
+                type="file"
+                name=""
+                id="file"
+                style={{
+                  display: "none",
+                }}
+              />
+              <span>icon</span>
+            </label>
+            <button className="h-[40px] rounded-[20px] cursor-pointer bg-[#1EA1F2] px-4 text-white">
+              Tweet
+            </button>
+          </div>
         </div>
       </div>
     </div>
