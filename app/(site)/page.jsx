@@ -1,4 +1,4 @@
-import { Header, HomeSidebar, Share } from "@components";
+import { Header, HomeSidebar, Posts, Share } from "@components";
 import React from "react";
 
 const Home = () => {
@@ -7,6 +7,8 @@ const Home = () => {
       <div className="home__preview border-x w-3/5">
         <Header title="Home" />
         <Share />
+        <Posts />
+        
       </div>
       <HomeSidebar />
     </div>

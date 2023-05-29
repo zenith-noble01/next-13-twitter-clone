@@ -40,3 +40,30 @@ export const usersToFollow = [
         profilePic: "/Images/user2.jpg"
     }
 ]
+
+
+export const userPosts = [
+    {
+        name: "john muller",
+        username: "johnmuller",
+        text: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores ea nulla inventore at voluptatem dolorem qui maiores. Totam, esse error?"
+    },
+    {
+        name: "john muller",
+        username: "johnmuller",
+        image: "/Images/img1.jpg",
+        text: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores ea nulla inventore at voluptatem dolorem qui maiores. Totam, esse error?"
+    },
+    {
+        name: "john muller",
+        username: "johnmuller",
+        text: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores ea nulla inventore at voluptatem dolorem qui maiores. Totam, esse error?"
+    },
+    {
+        name: "john muller",
+        username: "johnmuller",
+        image: "/Images/img2.jpg",
+        text: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores ea nulla inventore at voluptatem dolorem qui maiores. Totam, esse error?"
+    },
+
+]
