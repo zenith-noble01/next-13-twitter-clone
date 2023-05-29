@@ -1,13 +1,24 @@
 "use client";
 
-import { Header } from "@components";
+import { Header, HomeSidebar } from "@components";
+import Image from "next/image";
 
 const Profile = () => {
   return (
-    <div className="border-x min-h-screen">
-      <div className="settings__container">
+    <div className="min-h-screen flex">
+      <div className="profile__container border-x flex-1">
         <Header arrow={true} title="username" />
+        <div className="relative bg-black">
+          <Image
+            width={50}
+            height={50}
+            alt="username cover picture"
+            src="/Images/cover.png"
+            className="w-full h-[200px] object-cover"
+          />
+        </div>
       </div>
+      <HomeSidebar />
     </div>
   );
 };

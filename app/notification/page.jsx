@@ -1,13 +1,14 @@
 "use client";
 
-import { Header } from "@components";
+import { Header, HomeSidebar } from "@components";
 
 const Notification = () => {
   return (
-    <div className="border-x min-h-screen">
-      <div className="settings__container">
+    <div className="min-h-screen flex w-full">
+      <div className="settings__container flex-1 border-x">
         <Header arrow={true} title="Notifications" />
       </div>
+      <HomeSidebar />
     </div>
   );
 };
