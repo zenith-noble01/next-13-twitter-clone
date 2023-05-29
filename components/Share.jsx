@@ -1,18 +1,19 @@
 "use client";
 
-import Image from "next/image";
 import React, { useState } from "react";
 import { RiCloseLine } from "react-icons/ri";
+import CustomizeImage from "./CustomizeImage";
+import { BiImage } from "react-icons/bi";
 
 const Share = () => {
   const [file, setFile] = useState(null);
   return (
     <div className="px-8 py-4 bg-white flex gap-4">
       <div className="user__profile  ">
-        <Image
+        <CustomizeImage
           src="/Images/user1.jpg"
-          height={50}
-          width={50}
+          height={40}
+          width={40}
           alt="user profile picture"
           className="rounded-full object-cover object-top max-h-[50px]"
         />
@@ -27,7 +28,7 @@ const Share = () => {
         <div className="share_bottom flex flex-col gap-2">
           {file && (
             <div className="image__container flex wfull bg-red relative">
-              <Image
+              <CustomizeImage
                 src={URL.createObjectURL(file)}
                 height={20}
                 width={20}
@@ -52,9 +53,11 @@ const Share = () => {
                 }}
                 onChange={(e) => setFile(e.target.files[0])}
               />
-              <span>icon</span>
+              <span className="text-2xl text-[#1EA1F2] cursor-pointer">
+                <BiImage />
+              </span>
             </label>
-            <button className="h-[40px] rounded-[20px] cursor-pointer bg-[#1EA1F2] px-4 text-white">
+            <button className="h-[40px] rounded-[20px] cursor-pointer bg-[#1EA1F2] px-4 text-white border-[#1EA1F2] hover:bg-transparent border hover:text-[#1EA1F2] transition">
               Tweet
             </button>
           </div>

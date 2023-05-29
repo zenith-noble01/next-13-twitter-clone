@@ -11,7 +11,7 @@ export const sidebarRoutes = [
         name: "Notification", path: "/notification", icon: HiBell
     },
     {
-        name: "Profile", path: "/profile", icon: RiUserLine
+        name: "Profile", path: "/profile/35467890", icon: RiUserLine
     },
     {
         name: "Settings", path: "/settings", icon: HiOutlineCog6Tooth

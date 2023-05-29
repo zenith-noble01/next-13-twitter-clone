@@ -1,3 +1,4 @@
+import { CustomizeImage } from "@components";
 import { usersToFollow } from "@constants";
 import Image from "next/image";
 
@@ -14,7 +15,7 @@ const HomeSidebar = () => {
               key={index}
             >
               <div className="flex items-center gap-2 ">
-                <Image
+                <CustomizeImage
                   src={user.profilePic}
                   height={50}
                   width={50}

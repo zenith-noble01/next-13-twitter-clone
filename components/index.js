@@ -4,5 +4,7 @@ import HomeSidebar from "./HomeSidebar";
 import Share from "./Share"
 import Posts from "./Posts"
 import Post from "./Post"
+import CustomizeImage from "./CustomizeImage"
 
-export { Sidebar, Header, HomeSidebar, Share, Post, Posts }
+
+export { Sidebar, Header, HomeSidebar, Share, Post, Posts, CustomizeImage }

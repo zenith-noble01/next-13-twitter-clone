@@ -1,16 +1,16 @@
-import Image from "next/image";
+import { CustomizeImage } from "@components";
 import React from "react";
 
 const Post = ({ data }) => {
   return (
     <div className="w-full first:border-t border-b last:border-b-0 px-8 py-4">
       <div className="post__container flex gap-4 ">
-        <Image
+        <CustomizeImage
           src="/Images/user1.jpg"
-          height={50}
-          width={50}
+          height={40}
+          width={40}
           alt="user profile picture"
-          className="rounded-full object-cover object-top max-h-[50px]"
+          className="rounded-full object-cover object-top max-h-[40px]"
         />
         <div className="post__data">
           <div className="userdata">
@@ -24,7 +24,7 @@ const Post = ({ data }) => {
           <div className="post__content flex flex-col gap-4">
             <p className="text-gray-600">{data.text}</p>
             {data.image && (
-              <Image
+              <CustomizeImage
                 src={data.image}
                 height={300}
                 width={300}
