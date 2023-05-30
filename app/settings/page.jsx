@@ -7,8 +7,11 @@ const Settings = () => {
   const [file, setFile] = useState(null);
   return (
     <div className="user__data w-full h-full  justify-center flex">
-      <form className="flex flex-col gap-4">
-        <label htmlFor="profile" className="cursor-pointer">
+      <form className="flex flex-col gap-4 w-[70%]  transition-all">
+        <label
+          htmlFor="profile"
+          className="cursor-pointer hover:bg-zinc-950 transition"
+        >
           <CustomizeImage
             alt="profile picture of username"
             src={file ? URL.createObjectURL(file) : "/Images/user1.jpg"}
