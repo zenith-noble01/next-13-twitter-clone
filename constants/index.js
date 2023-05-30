@@ -67,3 +67,18 @@ export const userPosts = [
     },
 
 ]
+
+export const settingsRoutes = [
+    {
+        name: "User data",
+        path: "/settings"
+    },
+    {
+        name: "Password",
+        path: "/settings/password"
+    },
+    {
+        name: "display",
+        path: "/settings/display"
+    }
+]
