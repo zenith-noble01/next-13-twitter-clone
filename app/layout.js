@@ -1,5 +1,6 @@
 import { Sidebar } from "@components"
 import "@styles/globals.css"
+import { Providers } from "../redux/Providers.jsx"
 
 
 export const metadata = {
@@ -11,12 +12,14 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <main className="flex w-full px-24">
-          <Sidebar />
-          <div className="main__container w-[80%]">
-            {children}
-          </div>
-        </main>
+        <Providers>
+          <main className="flex w-full px-24">
+            <Sidebar />
+            <div className="main__container w-[80%]">
+              {children}
+            </div>
+          </main>
+        </Providers>
       </body>
     </html >
   )

@@ -1,7 +1,6 @@
 "use client";
 
 import { CustomizeImage, Header, HomeSidebar } from "@components";
-import Image from "next/image";
 
 const Profile = () => {
   return (
