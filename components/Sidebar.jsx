@@ -14,9 +14,9 @@ const Sidebar = () => {
         <ul className="sidebar__routes">
           {sidebarRoutes.map((route, index) => (
             <Link href={route.path} key={index}>
-              <li className="">
+              <li className="route">
                 <route.icon className="text-2xl" />{" "}
-                <span className="hidden lg:block">{route.name}</span>
+                <span className="hidden lg:block ">{route.name}</span>
               </li>
             </Link>
           ))}
