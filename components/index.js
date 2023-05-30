@@ -1,6 +1,6 @@
 import Sidebar from "./Sidebar";
 import Header from "./Header";
-import HomeSidebar from "./HomeSidebar";
+import HomeSidebar from "./RightSidebar";
 import Share from "./Share"
 import Posts from "./Posts"
 import Post from "./Post"

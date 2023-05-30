@@ -4,7 +4,7 @@ import { userPosts } from "@constants";
 
 const Posts = () => {
   return (
-    <div className="posts">
+    <div className="posts pb-4">
       {userPosts.map((post, index) => (
         <Post data={post} key={index} />
       ))}

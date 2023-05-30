@@ -1,5 +1,6 @@
 import { CustomizeImage } from "@components";
 import React from "react";
+import { BiComment, BiHeart } from "react-icons/bi";
 
 const Post = ({ data }) => {
   return (
@@ -34,8 +35,12 @@ const Post = ({ data }) => {
             )}
 
             <div className="post__action flex items-center list-none gap-4">
-              <li className="cursor-pointer">comment</li>{" "}
-              <li className="cursor-pointer">like</li>
+              <li className="cursor-pointer">
+                <BiComment />
+              </li>
+              <li className="cursor-pointer">
+                <BiHeart />
+              </li>
             </div>
           </div>
         </div>
