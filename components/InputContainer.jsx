@@ -1,6 +1,6 @@
 const InputContainer = ({ type, placeholder }) => {
   return (
-    <div className="input__container  border flex px-4">
+    <div className="input__container  border flex px-4 focus:border-sky-500">
       <input
         type={type}
         placeholder={placeholder}

@@ -11,9 +11,6 @@ html {
 .route {
   @apply h-[40px] flex items-center gap-2 px-4 hover:bg-gray-200/30  transition-all w-fit rounded-[20px];
 }
-.icon:hover svg {
-  @apply text-white;
-}
 
 button {
   height: fit-content;
