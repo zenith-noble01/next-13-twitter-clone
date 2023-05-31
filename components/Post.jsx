@@ -13,10 +13,13 @@ const Post = ({ data }) => {
   const handleAddComment = async () => {};
 
   const handleAddLike = async () => {
-    console.log(`this is post ${data.id}`);
     if (data.id === post.id) {
       setisLiked(true);
     } else {
+      setisLiked(false);
+    }
+
+    if (isLiked && data.id === post.id) {
       setisLiked(false);
     }
   };
@@ -60,7 +63,7 @@ const Post = ({ data }) => {
                 <BiHeart
                   size={20}
                   onClick={handleAddLike}
-                  className={`${isLiked && "fill-rose-500 animate-pulse"}`}
+                  className={`${isLiked && "fill-rose-500"}`}
                 />
               </li>
             </div>
