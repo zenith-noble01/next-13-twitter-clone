@@ -113,14 +113,15 @@ export const colorTypes = [
 export const themeTypes = [
     {
         name: "Default",
-        bg: "bg-white"
+        bg: "bg-white",
+        color: "black"
     },
     {
         name: "Dim",
-        bg: "bg-[#15202b]"
+
     },
     {
         name: "Lights out",
-        bg: "bg-black"
+        bg: "bg-black",
     },
 ]

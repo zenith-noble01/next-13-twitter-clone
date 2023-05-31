@@ -5,7 +5,7 @@ import { useState } from "react";
 import { RiDropLine } from "react-icons/ri";
 
 const ColorDisplay = () => {
-  const [activeColor, setActiveColor] = useState(0);
+  const [activeColor, setActiveColor] = useState(colorTypes[0].name);
   const handleOnClick = (color) => {
     setActiveColor(color);
   };
@@ -19,9 +19,9 @@ const ColorDisplay = () => {
             className={`
             color h-10 w-10 rounded-full cursor-pointer ${color.bg} flex items-center justify-center text-white
             `}
-            onClick={() => handleOnClick(index)}
+            onClick={() => handleOnClick(color.name)}
           >
-            {activeColor === index && <RiDropLine size={25} />}
+            {activeColor === color.name && <RiDropLine size={25} />}
           </div>
         ))}
       </div>
