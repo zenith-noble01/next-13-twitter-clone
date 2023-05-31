@@ -82,3 +82,45 @@ export const settingsRoutes = [
         path: "/settings/display"
     }
 ]
+
+export const colorTypes = [
+    {
+        name: "blue",
+        bg: "bg-[#1EA1F2]"
+    },
+    {
+        name: "yellow",
+        bg: "bg-yellow-500"
+    },
+    {
+        name: "pink",
+        bg: "bg-rose-500"
+    },
+    {
+        name: "indigo",
+        bg: "bg-indigo-500"
+    },
+    {
+        name: "orange",
+        bg: "bg-orange-500"
+    },
+    {
+        name: "green",
+        bg: "bg-green-500"
+    },
+]
+
+export const themeTypes = [
+    {
+        name: "Default",
+        bg: "bg-white"
+    },
+    {
+        name: "Dim",
+        bg: "bg-[#15202b]"
+    },
+    {
+        name: "Lights out",
+        bg: "bg-black"
+    },
+]

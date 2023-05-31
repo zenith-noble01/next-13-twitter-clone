@@ -1,10 +1,22 @@
+"use client";
+
+import { useState } from "react";
 import { HiAtSymbol, HiFingerPrint, HiOutlineUser } from "react-icons/hi";
 
 const InputContainer = ({ type, placeholder, email, password, username }) => {
+  const [inputType, setInputType] = useState("password");
+
+  const handleOnClick = () => {
+    if (inputType === "text") {
+      setInputType("password");
+    } else {
+      setInputType("text");
+    }
+  };
   return (
     <div className="input__container border flex px-4 rounded items-center">
       <input
-        type={type}
+        type={password ? inputType : type}
         placeholder={placeholder}
         className="h-[40px] flex-1"
       />
@@ -12,7 +24,8 @@ const InputContainer = ({ type, placeholder, email, password, username }) => {
       {password && (
         <HiFingerPrint
           size={20}
-          className="cursor-pointer hover:text-sky-500"
+          className="cursor-pointer"
+          onClick={handleOnClick}
         />
       )}
       {username && <HiOutlineUser size={20} />}

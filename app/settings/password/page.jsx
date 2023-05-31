@@ -1,10 +1,18 @@
+"use client";
+
 import React from "react";
 import { InputContainer, ButtonContainer } from "@components";
 
 const Password = () => {
+  const handleUpdatePassword = async (e) => {
+    e.preventDefault();
+  };
   return (
     <div className="user__data w-full h-full  justify-center flex">
-      <form className="flex flex-col gap-4 w-[70%]  transition-all">
+      <form
+        className="flex flex-col gap-4 w-[70%]  transition-all"
+        onSubmit={handleUpdatePassword}
+      >
         <InputContainer
           password
           type="password"

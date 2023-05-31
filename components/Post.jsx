@@ -28,7 +28,7 @@ const Post = ({ data }) => {
               <CustomizeImage
                 src={data.image}
                 height={300}
-                width={300}
+                width={550}
                 alt="user profile picture"
                 className="rounded-3xl w-full max-h-[300px] object-cover object-top"
               />

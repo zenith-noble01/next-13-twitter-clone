@@ -10,7 +10,7 @@ const Profile = () => {
         <div className="bg-black w-full relative">
           <CustomizeImage
             alt="cover picture of username"
-            width={500}
+            width={600}
             height={200}
             src="/Images/cover.png"
             className="w-full h-[200px] object-cover"

@@ -8,8 +8,6 @@ import { usePathname } from "next/navigation";
 const Sidebar = () => {
   const pathname = usePathname();
 
-  console.log(pathname);
-
   return (
     <div className="w-[20%]  min-h-screen py-4 ">
       <div className="flex flex-col gap-8 sticky top-4">
@@ -24,7 +22,7 @@ const Sidebar = () => {
                   pathname === route.path && "bg-gray-200/30"
                 } route`}
               >
-                <route.icon className="text-2xl" />{" "}
+                <route.icon className="text-2xl" />
                 <span className="hidden lg:block ">{route.name}</span>
               </li>
             </Link>
