@@ -8,7 +8,7 @@ export const metadata = {
   description: "The official twitter clone for youtube tutorials",
 };
 
-export default function RootLayout({ children }) {
+export default function SettingsLayout({ children }) {
   return (
     <div className="w-full border-x min-h-screen flex flex-col">
       <Header title="Settings" arrow />
