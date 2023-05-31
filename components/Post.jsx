@@ -1,8 +1,26 @@
+"use client";
+
 import { CustomizeImage } from "@components";
-import React from "react";
+import { userPosts } from "@constants";
+import { useState } from "react";
 import { BiComment, BiHeart } from "react-icons/bi";
 
 const Post = ({ data }) => {
+  const [isLiked, setisLiked] = useState(false);
+
+  const post = userPosts.find((post) => post.id === data.id);
+
+  const handleAddComment = async () => {};
+
+  const handleAddLike = async () => {
+    console.log(`this is post ${data.id}`);
+    if (data.id === post.id) {
+      setisLiked(true);
+    } else {
+      setisLiked(false);
+    }
+  };
+
   return (
     <div className="w-full first:border-t border-b last:border-b-0 px-8 py-4">
       <div className="post__container flex gap-4 ">
@@ -36,10 +54,14 @@ const Post = ({ data }) => {
 
             <div className="post__action flex items-center list-none gap-4">
               <li className="cursor-pointer">
-                <BiComment />
+                <BiComment size={20} onClick={handleAddComment} />
               </li>
               <li className="cursor-pointer">
-                <BiHeart />
+                <BiHeart
+                  size={20}
+                  onClick={handleAddLike}
+                  className={`${isLiked && "fill-rose-500 animate-pulse"}`}
+                />
               </li>
             </div>
           </div>
