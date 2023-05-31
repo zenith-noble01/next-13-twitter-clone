@@ -11,7 +11,7 @@ const ColorDisplay = () => {
   };
   return (
     <div className="flex flex-col gap-4">
-      <p className="font-medium font-2xl">Color</p>
+      <p className="font-bold font-2xl">Color</p>
       <div className="color__container flex flex-wrap justify-between gap-2">
         {colorTypes.map((color, index) => (
           <div

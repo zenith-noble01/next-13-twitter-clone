@@ -32,7 +32,7 @@ const Post = ({ data }) => {
           height={40}
           width={40}
           alt="user profile picture"
-          className="rounded-full object-cover object-top max-h-[40px]"
+          className="rounded-full object-cover object-top max-h-[40px] w-auto h-auto"
         />
         <div className="post__data">
           <div className="userdata">
@@ -51,7 +51,7 @@ const Post = ({ data }) => {
                 height={300}
                 width={550}
                 alt="user profile picture"
-                className="rounded-3xl w-full max-h-[300px] object-cover object-top"
+                className="rounded-3xl max-h-[300px] object-cover object-top"
               />
             )}
 

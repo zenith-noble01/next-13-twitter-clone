@@ -33,6 +33,7 @@ const Share = () => {
                 src={URL.createObjectURL(file)}
                 height={20}
                 width={20}
+                alt="new image to be uploaded"
                 className="w-full max-h-[300px] object-cover rounded-3xl object-top"
               />
               <div

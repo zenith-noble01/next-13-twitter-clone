@@ -13,7 +13,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
         <Providers>
-          <main className="flex w-full px-24">
+          <main className="flex w-full max-[750px]:px-8 px-24">
             <Sidebar />
             <div className="main__container w-[80%]">
               {children}
