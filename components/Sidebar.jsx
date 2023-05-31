@@ -3,8 +3,13 @@
 import Link from "next/link";
 import { FaTwitter } from "react-icons/fa";
 import { sidebarRoutes } from "@constants";
+import { usePathname } from "next/navigation";
 
 const Sidebar = () => {
+  const pathname = usePathname();
+
+  console.log(pathname);
+
   return (
     <div className="w-[20%]  min-h-screen py-4 ">
       <div className="flex flex-col gap-8 sticky top-4">
@@ -14,7 +19,11 @@ const Sidebar = () => {
         <ul className="sidebar__routes">
           {sidebarRoutes.map((route, index) => (
             <Link href={route.path} key={index}>
-              <li className="route">
+              <li
+                className={`${
+                  pathname === route.path && "bg-gray-200/30"
+                } route`}
+              >
                 <route.icon className="text-2xl" />{" "}
                 <span className="hidden lg:block ">{route.name}</span>
               </li>

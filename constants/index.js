@@ -70,7 +70,7 @@ export const userPosts = [
 
 export const settingsRoutes = [
     {
-        name: "User data",
+        name: "Your account",
         path: "/settings"
     },
     {
@@ -78,7 +78,7 @@ export const settingsRoutes = [
         path: "/settings/password"
     },
     {
-        name: "display",
+        name: "Display",
         path: "/settings/display"
     }
 ]

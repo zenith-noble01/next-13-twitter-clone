@@ -1,7 +1,13 @@
 import React from "react";
+import { ColorDisplay, ThemeDisplay } from "@components";
 
 const Display = () => {
-  return <div>Display</div>;
+  return (
+    <div className="">
+      <ColorDisplay />
+      <ThemeDisplay />
+    </div>
+  );
 };
 
 export default Display;

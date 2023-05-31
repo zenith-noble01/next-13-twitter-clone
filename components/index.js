@@ -7,6 +7,11 @@ import Post from "./Post"
 import CustomizeImage from "./CustomizeImage"
 import ButtonContainer from "./ButtonContainer";
 import InputContainer from "./InputContainer";
+import SettingsSidebar from "./settingsSidebar"
+import ColorDisplay from "./ColorDisplay"
+import ThemeDisplay from "./ThemeDisplay"
 
 
-export { Sidebar, Header, HomeSidebar, Share, Post, Posts, CustomizeImage, ButtonContainer, InputContainer }
+export {
+    Sidebar, Header, HomeSidebar, Share, Post, Posts, CustomizeImage, ButtonContainer, InputContainer, SettingsSidebar, ColorDisplay, ThemeDisplay
+}
