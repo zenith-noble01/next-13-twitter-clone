@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import { RiCloseLine } from "react-icons/ri";
 import CustomizeImage from "./CustomizeImage";
 import { BiImage } from "react-icons/bi";
+import { ButtonContainer } from "@components";
 
 const Share = () => {
   const [file, setFile] = useState(null);
@@ -57,9 +58,11 @@ const Share = () => {
                 <BiImage />
               </span>
             </label>
-            <button className="h-[40px] rounded-[20px] cursor-pointer bg-[#1EA1F2] px-4 text-white border-[#1EA1F2] hover:bg-transparent border hover:text-[#1EA1F2] transition">
-              Tweet
-            </button>
+            <ButtonContainer
+              type="button"
+              label="Tweet"
+              className="h-[40px] rounded-[20px] cursor-pointer bg-[#1EA1F2] px-4 text-white border-[#1EA1F2] hover:bg-transparent border hover:text-[#1EA1F2] transition"
+            />
           </div>
         </div>
       </div>

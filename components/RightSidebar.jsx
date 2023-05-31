@@ -1,4 +1,4 @@
-import { CustomizeImage } from "@components";
+import { ButtonContainer, CustomizeImage } from "@components";
 import { usersToFollow } from "@constants";
 import Image from "next/image";
 
@@ -30,9 +30,11 @@ const HomeSidebar = () => {
                 </p>
               </div>
 
-              <button className="h-[40px] px-[20px] rounded-[20px] capitalize border-[#1EA1F2] border text-[#1EA1F2] hover:bg-[#1EA1F2] hover:text-white transition-all">
-                follow
-              </button>
+              <ButtonContainer
+                type="button"
+                label="Follow"
+                className="h-[40px] px-[20px] rounded-[20px]  border-[#1EA1F2] border text-[#1EA1F2] hover:bg-[#1EA1F2] hover:text-white transition-all"
+              />
             </div>
           ))}
         </div>

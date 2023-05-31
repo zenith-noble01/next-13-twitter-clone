@@ -1,13 +1,15 @@
 "use client";
 
-import { CustomizeImage } from "@components";
+import { ButtonContainer, CustomizeImage, InputContainer } from "@components";
 import { useState } from "react";
 
 const Settings = () => {
   const [file, setFile] = useState(null);
+
+  
   return (
     <div className="user__data w-full h-full  justify-center flex">
-      <form className="flex flex-col gap-4 w-[70%]  transition-all">
+      <form className="flex flex-col gap-4 w-[70%]  transition-all" onSubmit={handleUpdateUser}>
         <label
           htmlFor="profile"
           className="cursor-pointer hover:bg-zinc-950 transition"
@@ -28,13 +30,9 @@ const Settings = () => {
             id="profile"
           />
         </label>
-        <div className="input__container bg-black">
-          <input type="text" placeholder="username" />
-        </div>
-        <div className="input__container">
-          <input type="email" placeholder="codeenv@gmail.com" />
-        </div>
-        <button>Update</button>
+        <InputContainer type="text" placeholder="Username" />
+        <InputContainer type="email" placeholder="Email" />
+        <ButtonContainer type="submit" label="Update" className="" />
       </form>
     </div>
   );
