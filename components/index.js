@@ -10,8 +10,10 @@ import InputContainer from "./InputContainer";
 import SettingsSidebar from "./settingsSidebar"
 import ColorDisplay from "./ColorDisplay"
 import ThemeDisplay from "./ThemeDisplay"
+import ThemeWrapper from "./ThemeWrapper";
 
 
 export {
-    Sidebar, Header, HomeSidebar, Share, Post, Posts, CustomizeImage, ButtonContainer, InputContainer, SettingsSidebar, ColorDisplay, ThemeDisplay
+    Sidebar, Header, HomeSidebar, Share, Post, Posts, CustomizeImage, ButtonContainer, InputContainer, SettingsSidebar, ColorDisplay, ThemeDisplay,
+    ThemeWrapper
 }

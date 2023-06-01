@@ -1,4 +1,4 @@
-import { Sidebar } from "@components"
+import { Sidebar, ThemeWrapper } from "@components"
 import "@styles/globals.css"
 import { Providers } from "../redux/Providers.jsx"
 
@@ -13,12 +13,14 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
         <Providers>
-          <main className="flex w-full max-[750px]:px-8 px-24 transition-all duration-300 theme bg-skin-fill">
-            <Sidebar />
-            <div className="main__container w-[80%]">
-              {children}
-            </div>
-          </main>
+          <ThemeWrapper>
+            <main className="flex w-full max-[750px]:px-8 px-24 transition-all duration-300 theme bg-skin-fill">
+              <Sidebar />
+              <div className="main__container w-[80%]">
+                {children}
+              </div>
+            </main>
+          </ThemeWrapper>
         </Providers>
       </body>
     </html >
