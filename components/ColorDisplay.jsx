@@ -2,7 +2,7 @@
 
 import { colorTypes } from "@constants";
 import { useState } from "react";
-import { RiDropLine } from "react-icons/ri";
+import { AiOutlineCheck } from "react-icons/ai";
 
 const ColorDisplay = () => {
   const [activeColor, setActiveColor] = useState(colorTypes[0].name);
@@ -19,11 +19,17 @@ const ColorDisplay = () => {
           <div
             key={index}
             className={`
-            color h-10 w-10 rounded-full cursor-pointer flex items-center justify-center text-white bg-${color.name}-500
-            `}
-            onClick={() => handleOnClick(color.name)}
+        color h-10 w-10 rounded-full cursor-pointer flex items-center justify-center text-white ${
+          color.bg
+        } ${
+              index === activeColor
+                ? "opacity-100"
+                : "opacity-75 hover:opacity-100 transition duration-300 ease-in-out"
+            }
+      `}
+            onClick={() => handleOnClick(index)}
           >
-            {activeColor === color.name && <RiDropLine size={25} />}
+            {index === activeColor && <AiOutlineCheck size={25} />}
             {console.log(color.bg)}
           </div>
         ))}

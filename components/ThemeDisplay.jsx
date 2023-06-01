@@ -1,7 +1,7 @@
 "use client";
 
 import { themeTypes } from "@constants";
-import { RiDropLine } from "react-icons/ri";
+import { AiOutlineCheck } from "react-icons/ai";
 import { useDispatch, useSelector } from "react-redux";
 import { toggleTheme } from "@redux/slice/themeSlice";
 
@@ -29,7 +29,7 @@ const ThemeDisplay = () => {
             onClick={() => handleOnClick(theme.name)}
           >
             <div className="h-4 w-4 rounded-full flex items-center justify-center bg-sky-500">
-              {userTheme === theme.name && <RiDropLine size={10} />}
+              {userTheme === theme.name && <AiOutlineCheck size={10} />}
             </div>
             <span
               className={`font-bold ${
