@@ -17,19 +17,13 @@ const ColorDisplay = () => {
       <div className="color__container flex flex-wrap justify-between gap-2">
         {colorTypes.map((color, index) => (
           <div
-            key={index}
+            key={color.name}
             className={`
-        color h-10 w-10 rounded-full cursor-pointer flex items-center justify-center text-white ${
-          color.bg
-        } ${
-              index === activeColor
-                ? "opacity-100"
-                : "opacity-75 hover:opacity-100 transition duration-300 ease-in-out"
-            }
-      `}
-            onClick={() => handleOnClick(index)}
+            color h-10 w-10 rounded-full cursor-pointer ${color.bg} flex items-center justify-center text-white
+            `}
+            onClick={() => handleOnClick(color.name)}
           >
-            {index === activeColor && <AiOutlineCheck size={25} />}
+            {activeColor === color.name && <AiOutlineCheck size={25} />}
             {console.log(color.bg)}
           </div>
         ))}

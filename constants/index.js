@@ -116,7 +116,7 @@ export const colorTypes = [
 
 export const themeTypes = [
     {
-        name: "default",
+        name: "light",
         bg: "bg-white",
         color: "black",
         label: "Default"

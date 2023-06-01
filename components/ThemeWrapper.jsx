@@ -4,7 +4,7 @@ import { useSelector } from "react-redux";
 
 const ThemeWrapper = ({ children }) => {
   // const theme = useSelector((state) => state.theme);
-  return <div className={``}>{children}</div>;
+  return <div className={`transition-all duration-300`}>{children}</div>;
 };
 
 export default ThemeWrapper;
