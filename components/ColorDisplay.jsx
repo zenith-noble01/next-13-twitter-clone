@@ -17,13 +17,14 @@ const ColorDisplay = () => {
       <div className="color__container flex flex-wrap justify-between gap-2">
         {colorTypes.map((color, index) => (
           <div
-            key={color.name}
+            key={index}
             className={`
-            color h-10 w-10 rounded-full cursor-pointer ${color.bg} flex items-center justify-center text-white
+            color h-10 w-10 rounded-full cursor-pointer flex items-center justify-center text-white bg-${color.name}-500
             `}
             onClick={() => handleOnClick(color.name)}
           >
             {activeColor === color.name && <RiDropLine size={25} />}
+            {console.log(color.bg)}
           </div>
         ))}
       </div>

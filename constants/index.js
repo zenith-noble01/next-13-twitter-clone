@@ -90,7 +90,7 @@ export const settingsRoutes = [
 export const colorTypes = [
     {
         name: "blue",
-        bg: "bg-[#1EA1F2]"
+        bg: "bg-sky-500"
     },
     {
         name: "yellow",
