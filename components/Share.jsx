@@ -9,7 +9,7 @@ import { ButtonContainer } from "@components";
 const Share = () => {
   const [file, setFile] = useState(null);
   return (
-    <div className="px-8 py-4 bg-white flex gap-4">
+    <div className="px-8 py-4 bg-skin-fill flex gap-4">
       <div className="user__profile  ">
         <CustomizeImage
           src="/Images/user1.jpg"

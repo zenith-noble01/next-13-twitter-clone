@@ -21,8 +21,8 @@ const ThemeDisplay = () => {
             className={`theme h-[70px] flex-1 ${
               theme.bg ? `${theme.bg}` : "bg-[#15202b]"
             }  flex items-center text-white rounded-md cursor-pointer px-4 gap-4 ${
-              activeTheme === theme.name && "border-sky-500"
-            } border`}
+              activeTheme === theme.name && "border-sky-500 border"
+            }`}
             onClick={() => handleOnClick(theme.name)}
           >
             <div className="h-4 w-4 rounded-full flex items-center justify-center bg-sky-500">

@@ -8,6 +8,20 @@ html {
   font-family: "Sawarabi Gothic", sans-serif;
 }
 
+@layer base {
+  :root {
+    --bg: #fff;
+  }
+
+  .theme-dim {
+    --bg: #15202b;
+  }
+
+  .theme-lightout {
+    --bg: #000;
+  }
+}
+
 .route {
   @apply h-[40px] flex items-center gap-2 px-4 hover:bg-gray-200/30  transition-all w-fit rounded-[20px];
 }

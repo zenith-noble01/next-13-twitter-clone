@@ -7,6 +7,11 @@ module.exports = {
   ],
   theme: {
     extend: {
+      backgroundColor: {
+        skin: {
+          fill: "var(--bg)"
+        }
+      }
     },
   },
   plugins: [],
