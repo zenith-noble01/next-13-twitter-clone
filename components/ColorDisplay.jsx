@@ -24,7 +24,6 @@ const ColorDisplay = () => {
             onClick={() => handleOnClick(color.name)}
           >
             {activeColor === color.name && <AiOutlineCheck size={25} />}
-            {console.log(color.bg)}
           </div>
         ))}
       </div>
