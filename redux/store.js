@@ -1,10 +1,11 @@
 "use client"
 
 import { configureStore } from "@reduxjs/toolkit"
-import CounterSlice from "./slice/CounterSlice"
+import themeSlice from "./slice/themeSlice"
+
 
 export const store = configureStore({
     reducer: {
-        count: CounterSlice
+        theme: themeSlice
     }
 })

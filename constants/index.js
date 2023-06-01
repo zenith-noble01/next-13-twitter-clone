@@ -116,16 +116,18 @@ export const colorTypes = [
 
 export const themeTypes = [
     {
-        name: "Default",
+        name: "default",
         bg: "bg-white",
-        color: "black"
+        color: "black",
+        label: "Default"
     },
     {
-        name: "Dim",
-
+        name: "dim",
+        label: "Dim"
     },
     {
-        name: "Lights out",
+        name: "lightout",
         bg: "bg-black",
+        label: "Lights out"
     },
 ]

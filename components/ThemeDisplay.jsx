@@ -1,14 +1,17 @@
 "use client";
 
-import { useState } from "react";
 import { themeTypes } from "@constants";
 import { RiDropLine } from "react-icons/ri";
+import { useDispatch, useSelector } from "react-redux";
+import { toggleTheme } from "@redux/slice/themeSlice";
 
 const ThemeDisplay = () => {
-  const [activeTheme, setActiveTheme] = useState(themeTypes[0].name);
+  const dispatch = useDispatch();
+
+  const userTheme = useSelector((state) => state.theme);
 
   const handleOnClick = (name) => {
-    setActiveTheme(name);
+    dispatch(toggleTheme(name));
   };
 
   return (
@@ -21,19 +24,19 @@ const ThemeDisplay = () => {
             className={`theme h-[70px] flex-1 ${
               theme.bg ? `${theme.bg}` : "bg-[#15202b]"
             }  flex items-center text-white rounded-md cursor-pointer px-4 gap-4 ${
-              activeTheme === theme.name && "border-sky-500 border"
+              userTheme === theme.name && "border-sky-500 border"
             }`}
             onClick={() => handleOnClick(theme.name)}
           >
             <div className="h-4 w-4 rounded-full flex items-center justify-center bg-sky-500">
-              {activeTheme === theme.name && <RiDropLine size={10} />}
+              {userTheme === theme.name && <RiDropLine size={10} />}
             </div>
             <span
               className={`font-bold ${
                 theme.color ? `text-black` : "text-white"
               } mx-auto`}
             >
-              {theme.name}
+              {theme.label}
             </span>
           </div>
         ))}
