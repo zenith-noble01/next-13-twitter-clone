@@ -2,18 +2,17 @@
 
 import { createSlice } from "@reduxjs/toolkit";
 
-const theme = JSON.parse(localStorage.getItem("theme")) || "light";
-
 export const themeSlice = createSlice({
     name: "theme",
-    initialState: theme ? theme : "light" || "dim" || "lightout",
+    initialState: "light",
     reducers: {
         toggleTheme: (state, action) => {
-            localStorage.setItem(
-                "theme",
-                JSON.stringify(action.payload)
-            );
-            return action.payload
+            if (typeof localStorage !== 'undefined') {
+                localStorage.setItem("theme", action.payload);
+                return action.payload;
+            } else {
+                return state;
+            }
         },
     },
 });
